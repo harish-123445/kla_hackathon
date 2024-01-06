@@ -16,11 +16,20 @@ distance[0].insert(0,0)
 for i in range(1,21):
     distance[i].insert(0,distance[0][i])
 
-print(ord_quantity)
+res_dist=res['r0']['neighbourhood_distance']
+res_dist.pop(0)
+print("Distance to neighbourhood from restaurant r0 :",res_dist)
 
+print("Order_quantity for each area ",ord_quantity)
 
 scooter_cap=d['vehicles']['v0']['capacity']
-print(scooter_cap)
 
-#knapsack loading problem
+print("capacity of scooter :",scooter_cap)
+
+print("Total quantity :",sum(ord_quantity))
+
+print("minimum number of slots :",round(sum(ord_quantity)/scooter_cap))
+
+for i in range(3):
+    
 
