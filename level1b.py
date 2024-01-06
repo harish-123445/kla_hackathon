@@ -1,5 +1,4 @@
 import json
-import itertools
 f = open('kla_hackathon/Student_Handout/Input_data/level1b.json')
 d = json.load(f)
 neighbour=d['neighbourhoods']
